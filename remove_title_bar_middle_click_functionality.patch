@@ -1,0 +1,13 @@
+--- src/events.c	2016-09-29 10:30:05.254229435 -0500
++++ src/events_patched.c	2016-09-29 10:30:28.074199173 -0500
+@@ -783,10 +783,6 @@
+     {
+         button1Action (c, ev);
+     }
+-    else if (ev->button == Button2)
+-    {
+-        clientLower (c, None);
+-    }
+     else if (ev->button == Button3)
+     {
+         XfwmButtonClickType tclick;
